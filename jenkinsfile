@@ -1,1 +1,10 @@
-/bin/bash helloworld.py
+pipeline {
+    agent any
+    stages {
+        stage('Welcome Step') {
+            steps { 
+              sh 'helloworld.py'
+            }
+        }
+    }
+}
