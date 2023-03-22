@@ -4,6 +4,7 @@ pipeline {
         stage('Welcome Step') {
             steps { 
               sh '/bin/python ./helloworld.py >> out'
+              //sh '/bin/python ./helloworld.py out'
             }
         }
     }
